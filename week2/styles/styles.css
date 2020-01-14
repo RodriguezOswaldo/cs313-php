@@ -7,7 +7,13 @@ body{
 #div1, #div2, #div3{
     height: 120px; 
     width: 240px;
-    margin:4px;
+    margin:6px;
+    font-size: 1.8em;
+    text-align: center;
+}
+div:hover{
+    font-weight: bolder;
+    box-shadow:2px 2px 2px #5a3145;
 }
 #div1{
     border:2px solid #771345;

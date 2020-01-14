@@ -1,7 +1,24 @@
-* {
-    margin:0;
-    padding:0;
-}
+
 body{
-    background: #771345;
+    margin:10px;
+    padding:4px;
+    background: #cca6b9;
 }
+#div1, #div2, #div3{
+    height: 120px; 
+    width: 240px;
+    margin:4px;
+}
+#div1{
+    border:2px solid #771345;
+    border-radius: 5px 5px 5px ;
+}
+#div2{
+    border:2px solid #771345;
+    border-radius: 5px 5px 5px ;
+}
+#div3{
+    border:2px solid #771345;
+    border-radius: 5px 5px 5px ;
+}
+

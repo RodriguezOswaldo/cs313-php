@@ -3,10 +3,14 @@ function buttonFunction(){
 }
 
 function changeColor(){
+    //updating the backgroundcolor using js vanilla
     var div1 = document.getElementById('div1');
     var strColor = document.getElementById('newColor').value;
     console.log(strColor);
     div1.style.backgroundColor = strColor;
-   $("#div1")
+    //Same process with text using jQuery
+    var textColor = $("#textColor").val(); 
+    console.log(textColor);
+   $("#div1").css('color', textColor);
 
 }

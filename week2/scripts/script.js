@@ -14,3 +14,13 @@ function changeColor(){
    $("#div1").css('color', textColor);
 
 }
+function hide(){
+    var div3 = $("#div3").toggle(1000);
+    $("#hideBtn").text("Show me");
+
+    // if(div2.style.display="none"){
+    //     $("#hideBtn").text("Show me");
+    // } else{
+    //         $("#hideBtn").text("Hide me");
+    // }
+    }

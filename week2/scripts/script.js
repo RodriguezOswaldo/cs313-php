@@ -15,7 +15,7 @@ function changeColor(){
 
 }
 function hide(){
-    var div3 = $("#div3").toggle(1000);
+    var div3 = $("#div2").toggle(1000);
     $("#hideBtn").text("Show me");
 
     // if(div2.style.display="none"){

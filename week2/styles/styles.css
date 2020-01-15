@@ -10,21 +10,23 @@ body{
     margin:6px;
     font-size: 1.8em;
     text-align: center;
+    border-radius: 15px 0px 15px 0px ;
+
 }
-div:hover{
+.div:hover{
     font-weight: bolder;
     box-shadow:2px 2px 2px #5a3145;
 }
 #div1{
-    border:2px solid #771345;
-    border-radius: 5px 5px 5px ;
+    border:2px solid #101345;
 }
 #div2{
-    border:2px solid #771345;
-    border-radius: 5px 5px 5px ;
+    border:2px solid #177045;
 }
 #div3{
     border:2px solid #771345;
-    border-radius: 5px 5px 5px ;
+}
+.btn{
+ margin:10px;
 }
 

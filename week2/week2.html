@@ -10,10 +10,15 @@
     <title>Week 2 - HTML, JS, & CSS Review</title>
 </head>
 <body>
-        <div id="div1">Div1</div>
-        <div id="div2">Div2</div>
-        <div id="div3">Div3</div>
+    <div class="container">
+        <div class="div" id="div1">Div1</div>
+        <div class="div" id="div2">Div2</div>
+        <div class="div" id="div3">Div3</div>
+        <label for="newColor">Please Type The Color You Want To Assign To the First Div</label><br>
+        <input  id="newColor" type="text"><br>
+        <button class="btn btn-outline-info" onclick="changeColor()">Change Color</button>
         <button class="btn btn-outline-success" onclick="buttonFunction()">Click Me</button>
+    </div>
     <script src="scripts/script.js">
     </script>
 </body>

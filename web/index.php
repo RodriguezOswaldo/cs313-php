@@ -33,7 +33,8 @@
     </div>
     <footer>
         <?php 
-                include "/web/modules/footer.php";
+        include $_SERVER['DOCUMENT_ROOT']."/CS313-PHP/web/modules/footer.php";
+       
         ?>
     </footer>
 </body>

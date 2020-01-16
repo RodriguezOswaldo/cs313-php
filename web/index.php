@@ -30,13 +30,13 @@
           </div>
           </div>
         </div>
-    </div>
-    <footer>
-        <?php 
+        <footer>
+            <?php 
         include $_SERVER['DOCUMENT_ROOT']."/CS313-PHP/web/modules/footer.php";
-       
+        
         ?>
     </footer>
+</div>
 </body>
 </html>
 

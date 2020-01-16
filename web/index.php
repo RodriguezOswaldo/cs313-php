@@ -30,13 +30,12 @@
           </div>
           </div>
         </div>
-      </div>
-
-      <footer>
-          <?php 
-          include "../modules/footer.php";
-            ?>
-          </footer>
+    </div>
+    <footer>
+        <?php 
+                include "/web/modules/footer.php";
+        ?>
+    </footer>
 </body>
 </html>
 

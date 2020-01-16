@@ -31,10 +31,7 @@
           </div>
         </div>
         <footer>
-            <?php 
-        include $_SERVER['DOCUMENT_ROOT']."/CS313-PHP/web/modules/footer.php";
-        
-        ?>
+            Here is my footer!
     </footer>
 </div>
 </body>

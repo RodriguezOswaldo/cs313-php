@@ -101,8 +101,10 @@ footer{
     animation-iteration-count: initial;
 }
 @keyframes content{
-    0%{top: -150px}
-    100%{top: 0}
+    0%{top: -150px;
+    opacity: 0;}
+    100%{top: 0;
+    opacity: 1;}
 }
 .sk-chase {
     width: 40px;

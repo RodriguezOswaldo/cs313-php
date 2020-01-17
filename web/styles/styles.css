@@ -90,11 +90,20 @@ footer{
     line-height: 1.5;
     padding:10px;
     box-shadow: 3px 3px 3px #55595c;
-
-
 }
 /* Assignments Page */ 
 
+.jumbotron{
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: initial;
+}
+@keyframes content{
+    0%{top: -150px}
+    100%{top: 0}
+}
 .sk-chase {
     width: 40px;
     height: 40px;

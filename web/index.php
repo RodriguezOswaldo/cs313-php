@@ -12,7 +12,7 @@
 </head>
 <body>
     <div class="jumbotron text-center">
-        <h1 title="Welcome to my portal!">Oswaldo's Rodríguez Portal</h1>
+        <h1 title="Welcome to my portal!">Oswaldo Rodríguez's Portal</h1>
         <p>Stick around to learn more about me, and to visualize some of my awesome projects!</p> 
     </div>
       

@@ -26,7 +26,7 @@
               <div class="box">
             <h3><a href="assignments/assignments.html">Assignments</a></h3> 
             <p>Click to view previous and new assignments..</p>
-            <p><a href="https://github.com/RodriguezOswaldo">Github page</a></p>
+            <p><a  target="_blank" href="https://github.com/RodriguezOswaldo">Github page</a></p>
           </div>
           </div>
         </div>

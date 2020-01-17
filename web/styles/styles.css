@@ -1,6 +1,8 @@
 /*search box css start here*/
 .container{
     text-align: center;
+    display: grid;
+   
 }
 .search-sec{
     padding: 2rem;
@@ -28,6 +30,7 @@
 .row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-area: middle;
 }
 @media (min-width: 992px){
     .search-sec{
@@ -37,13 +40,11 @@
     }
 }
 @media (max-width:600px){
-    .container{
 
-    }
     .row{
         text-align: center;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        margin-right:auto;
+        grid-template-columns: repeat(1,1fr);
     }
     .jumbotron{
         font-size: .7em;

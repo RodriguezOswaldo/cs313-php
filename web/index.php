@@ -20,7 +20,7 @@
         <div  class="row">
             <div id="div1" class="col-sm">
                 <div class="box">
-                    <h3><a href="about/aboutme.php">About me</a></h3> 
+                    <h3><a target="_blank" href="about/aboutme.php">About me</a></h3> 
                     <p>More information about the developer.</p>
                 </div>
             </div>

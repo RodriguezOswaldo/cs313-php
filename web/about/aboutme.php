@@ -27,8 +27,8 @@
             </p>
         </section>
         <section class="section section2">
-            <h2>The Temptation </h2>
-            <img src="furniture.jpeg" alt="green couch" title="green couch">
+            <h2>Some Title</h2>
+            <img src="furniture.jpeg" alt="An Image" title="green couch">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam est similique, qui earum rem
                 inventore enim perferendis quis quo.
             </p>

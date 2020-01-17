@@ -60,4 +60,19 @@ body{
       transform: scale(1.0); 
     } 
   }
-  
+  .showcase{
+    background: url('https://source.unsplash.com/random/1200x400');
+    background-size:cover;
+    background-position: center;
+    min-height: 100px;
+    padding: 3rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+  }
+  body{
+    background: rgba(0,0,10, 0.12)
+
+  }

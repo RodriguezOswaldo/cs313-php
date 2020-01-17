@@ -36,10 +36,26 @@
         background: rgba(26, 70, 104, 0.51);
     }
 }
+@media (max-width:600px){
+    .container{
+
+    }
+    .row{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .jumbotron{
+        font-size: .7em;
+        margin-left:0;
+        margin-right: 0;
+    }
+}
 
 @media (max-width: 992px){
     .search-sec{
         background: #1A4668;
+      
     }
 }
 body{

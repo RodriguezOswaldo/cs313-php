@@ -21,13 +21,13 @@
             <div id="div1" class="col-sm">
                 <div class="box">
                     <h3><a href="about/aboutme.php">About me</a></h3> 
-                    <p>In this link you will find more information about the developer.</p>
+                    <p>More information about the developer.</p>
                 </div>
             </div>
             <div id="div2"  class="col-sm">
                 <div class="box">
                     <h3><a href="assignments/assignments.php">Assignments</a></h3> 
-                    <p>Click to view previous and new assignments..</p>
+                    <p>Previous and new assignments..</p>
                     <p><a  target="_blank" href="https://github.com/RodriguezOswaldo">Github page</a></p>
                 </div>
             </div>

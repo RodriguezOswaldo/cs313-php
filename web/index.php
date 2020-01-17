@@ -37,12 +37,8 @@
 <footer>
         <p>&copy; <span id="year"></span> | <a title="link to my GitHub page" target="_blank" href="https://github.com/RodriguezOswaldo">Oswaldo Rodríguez S.</a> | South Carolina | <a  target="_blank" title="link to my BYU-I website" href="http://www.byui.edu/online">BYU-I Online Learning.</a></p>
 </footer>
-<script>
-    //I'll do this with php at the end.
-    var date = new Date();
-    var n = date.getFullYear();
-    console.log(n); 
-    var year = document.getElementById('year').innerHTML = n;
+<script src="scripts/scripts.js">
+  
 </script>
 </body>
 </html>

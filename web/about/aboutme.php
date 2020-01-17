@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Page in Progress</h2>
+        <h2>This page is page is considered work in Progress</h2>
         <div class="sk-chase">
             <div class="sk-chase-dot"></div>
             <div class="sk-chase-dot"></div>

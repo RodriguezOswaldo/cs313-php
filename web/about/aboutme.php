@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Don't waste your time in won't load.</h2>
+        <h2>Don't waste your time it won't load.</h2>
         <div class="sk-chase">
             <div class="sk-chase-dot"></div>
             <div class="sk-chase-dot"></div>

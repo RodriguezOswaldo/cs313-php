@@ -14,6 +14,14 @@
                 <h2>My Family</h2>
         </div>
         <section class="section section1">
+        <div class="sk-chase">
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+            <div class="sk-chase-dot"></div>
+          </div>
         <h2>The story</h2>
         <img src="weds.jpeg" alt="wedding rings" title="wedding rings">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, officia at totam laboriosam possimus sit repellendus ex quis esse. Illo!
@@ -30,8 +38,6 @@
         <img src="finance.jpeg" alt="calculations" title="calculations">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officia et quia molestiae, eius in id temporibus ullam ab at optio ipsam commodi nulla fugiat officiis tempore tenetur possimus maiores.
         </p>
-
-
     </section>
       
     </div>

@@ -114,5 +114,11 @@ footer{
   box-shadow: 3px 3px 3px #55595c;
 }
 .images:hover{
- transform: translate(20px, 20px);
+animation: move 2s; 
+}
+
+@keyframes move{
+  50%{
+    transform: translate(20px, 20px);
+  }
 }

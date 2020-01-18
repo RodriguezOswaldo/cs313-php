@@ -26,8 +26,8 @@
             </div>
             <div id="div2"  class="col-sm">
                 <div class="box">
-                    <h3><a href="assignments/assignments.php">Assignments</a></h3> 
-                    <p>Previous and new assignments..</p>
+                    <h3><a href="assignments/assignments.php">Projects</a></h3> 
+                    <p>Previous and new projects..</p>
                     <p><a  target="_blank" href="https://github.com/RodriguezOswaldo">Github page</a></p>
                 </div>
             </div>

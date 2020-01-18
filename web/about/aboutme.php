@@ -84,6 +84,7 @@
             <h2>Background</h2>
             <img src="programming.png" alt="A laptop used by a web developer" title="Photo by Fatos Bytyqi on Unsplash.com">
             <br>
+            <br>
             <p>I have been programming for the last couple years. I have worked with several programming
                 languages and technologies, included but not limited to HTML, CSS, JS, PHP, jQuery,
                 Visual Studio, C#, Microsoft SQL Server, Teradata, Oracle database, phpMyAdmin and others. </p>

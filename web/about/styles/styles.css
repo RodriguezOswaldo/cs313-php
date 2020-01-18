@@ -104,3 +104,13 @@
 #i5:checked ~ .nav #dot5{
   background: var(--forth);
 }
+footer{
+  background: #E9ECEF;
+  margin: 0;
+  padding:0;
+  text-align: center;
+  font-size: smaller;
+  line-height: 1.5;
+  padding:10px;
+  box-shadow: 3px 3px 3px #55595c;
+}

@@ -8,7 +8,6 @@
     box-shadow: rgb(7, 144, 179) 2px 2px 2px;
 }
   .showcase{
-    background: url('https://res.cloudinary.com/ownsan/image/upload/v1579365290/family_sh4tne.jpg');
     background-size:cover;
     background-position: center;
     min-height: 100px;

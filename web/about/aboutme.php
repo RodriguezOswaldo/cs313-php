@@ -11,6 +11,10 @@
     <link rel="shortcut icon" href="web/icon.png">
 
     <title>About Me</title>
+    <style> 
+    .showcase{
+    background: url('https://res.cloudinary.com/ownsan/image/upload/v1579365290/family_sh4tne.jpg');
+    </style>
 </head>
 
 <body>

@@ -82,7 +82,8 @@
             <img src="programming.png" alt="A laptop used by a web developer" title="Photo by Fatos Bytyqi on Unsplash.com">
             <p>I have been programming for the last couple years. I have worked with several programming
                 languages and technologies, included but not limited to HTML, CSS, JS, PHP, jQuery,
-                Visual Studio, C#, Microsoft SQL Server, Oracle database, phpMyAdmin and others. </p>
+                Visual Studio, C#, Microsoft SQL Server, Teradata, Oracle database, phpMyAdmin and others. </p>
+                <p>I am eager to learn, and I am always occupied trying to learn and understand new technologies. I like to challenge my knowledge in order to grow.</p>
             </p>
         </section>
     </div>

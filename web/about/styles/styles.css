@@ -61,7 +61,7 @@ body{
     } 
   }
   .showcase{
-    background: url('https://github.com/RodriguezOswaldo/cs313-php/blob/master/web/about/family.png');
+    background: url('/web/about/family.png');
     background-size:cover;
     background-position: center;
     min-height: 100px;

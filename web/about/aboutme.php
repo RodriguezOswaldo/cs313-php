@@ -17,7 +17,7 @@
     <div class="container">
         <div class="showcase">
             <h2>My Family</h2>
-          
+            <img src="/web/about/family.jpeg" alt="">
             <p>My wife Helena, my little one Arthur, and one more baby boy on his way constitute my small, and growing
                 family. </p>
         </div>

@@ -35,7 +35,7 @@
     
 </div>
 <hr>
-<footer><?php include '../modules/footer.php' ?></footer>
+<footer><?php include '../web/modules/footer.php' ?></footer>
 </body>
 </html>
 

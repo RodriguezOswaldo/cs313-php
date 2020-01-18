@@ -73,6 +73,7 @@ body{
     box-shadow: var(--shadow);
     color : #fff
     }
+
   @keyframes hover{
    80%{
     min-height: 400px;
@@ -82,8 +83,7 @@ body{
     animation: hover 3s;
     animation-fill-mode: forwards;
     animation-iteration-count: unset;
-    animation-delay: 0.10s;
-
+    animation-delay: 0.010s;
   }
   body{
     background: rgba(0,0,10, 0.12);

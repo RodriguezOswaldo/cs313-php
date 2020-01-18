@@ -14,6 +14,16 @@
     <style> 
     .showcase{
         background: url('https://res.cloudinary.com/ownsan/image/upload/v1579365290/family_sh4tne.jpg');
+        background-size:cover;
+        background-position: center;
+        min-height: 100px;
+        padding: 3rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        box-shadow: 3px 3px 3px var(--shadow);
+        color : #fff;
     }
     </style>
 </head>

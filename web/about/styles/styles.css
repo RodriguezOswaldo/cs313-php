@@ -8,16 +8,7 @@
     box-shadow: rgb(7, 144, 179) 2px 2px 2px;
 }
   .showcase{
-    background-size:cover;
-    background-position: center;
-    min-height: 100px;
-    padding: 3rem; 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: 3px 3px 3px var(--shadow);
-    color : #fff
+   
     }
 
   @keyframes hover{

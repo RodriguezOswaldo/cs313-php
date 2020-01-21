@@ -21,6 +21,10 @@
             <div class="sk-chase-dot"></div>
           </div>
         </div>
+        <div class="jumbotron text-center">
+        <h1 title="Welcome to my portal!">Assignments</h1>
+        <p>Some projects from the Web Engineering II class</p> 
+    </div>
 
         </body>
 </html>

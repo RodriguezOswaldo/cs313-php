@@ -18,7 +18,7 @@
             <h1 title="Welcome to my portal!">Projects</h1>
             <p>Some projects from the Web Engineering II class</p>
         </div>
-        
+        <a href="/web/week3-formvalidation/forteam.php">Forms</a>
         <h2>This page is still considered work in Progress</h2>
         <div class="sk-chase">
             <div class="sk-chase-dot"></div>

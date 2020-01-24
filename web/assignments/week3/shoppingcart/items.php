@@ -34,9 +34,9 @@ $items = $name = $img = " ";
     <div class="container">
         <form action="cart.php" method="POST">
             <label for="item">Select items from the list to add to your cart.</label><br>
-            <label for="items[]">Items: </label><br>
             <label for="name">Name For The Order: </label>
             <input type="text" name="name" placeholder="name"><br>
+            <label for="items[]">Items: </label><br>
             <div class="row">
                 <div class="col-sm">
                     <img src="./img/robe.jpg" name="" alt="Jedi Robes"><br>

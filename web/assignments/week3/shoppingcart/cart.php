@@ -27,22 +27,17 @@ session_start();
     <p>Here are the products you ordered.</p>
     <span>
         <?php 
-            if (isset($_POST['name'])){
-                echo "<span class='name'>" .$_POST['name'] . "</span>, thank you for shopping with us.<br>"; // Displays value of checked checkbox.
-                }
                 // Displays value of checked checkbox.
-            if(!empty($_POST['items'])){
-                // Loop to store and display values of individual checked checkbox.
-                foreach($_POST['items'] as $selected){
-                echo $selected."</br>";
+                if(!empty($_POST['items'])){
+                    // Loop to store and display values of individual checked checkbox.
+                    foreach($_POST['items'] as $selected){
+                        echo $selected."</br>";
+                    }
                 }
-            }
-            if(!empty($_POST['img'])){
-                // Loop to store and display values of individual checked checkbox.
-                foreach($_POST['img'] as $selected){
-                echo $selected."</br>";
-                }
-            }
+                echo"<br>";
+                if (isset($_POST['name'])){
+                    echo "<span class='name'>" .$_POST['name'] . "</span>, thank you for shopping with us.<br>"; // Displays value of checked checkbox.
+                    }
     ?></span>
     </div>
 </body>

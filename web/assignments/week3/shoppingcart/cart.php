@@ -16,6 +16,9 @@ session_start();
     .name{
         font-weight:bolder;
     }
+    .item{
+
+    }
     </style>
 </head>
 <body>
@@ -25,7 +28,7 @@ session_start();
     <span>
         <?php 
             if (isset($_POST['name'])){
-                echo "<span class='name'>" .$_POST['name'] . "</span>, thank you for shopping with us."; // Displays value of checked checkbox.
+                echo "<span class='name'>" .$_POST['name'] . "</span>, thank you for shopping with us.<br>"; // Displays value of checked checkbox.
                 }
                 // Displays value of checked checkbox.
             if(!empty($_POST['items'])){

@@ -18,7 +18,16 @@
             <h1 title="Welcome to my portal!">Projects</h1>
             <p>Some projects from the Web Engineering II class</p>
         </div>
-        <a target="_blank" title="form handling PHP" href="week3/formteam.php">Forms</a>
+        <ul>
+        
+        <li>
+            <a target="_blank" title="form handling PHP" href="week3/formteam.php">Forms</a><br>
+        </li>
+        <li>
+            <a target="_blank" title="form handling PHP" href="week3/shoppingcart/items.php">Shopping Cart</a>
+        </li>
+        
+        </ul>
         <h2>This page is still considered work in Progress</h2>
         <div class="sk-chase">
             <div class="sk-chase-dot"></div>

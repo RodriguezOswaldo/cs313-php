@@ -8,26 +8,39 @@ session_start();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cart</title>
+    <style>
+    body{
+        background:#BADA55;
+        text-align: center;
+    }
+    .name{
+        font-weight:bolder;
+    }
+    </style>
 </head>
 <body>
-<h2>Thanks for shopping!</h2>
-<p>These are the products you ordered.</p>
+    <div class="container">
+    <h2>Your order has been placed</h2>
+    <p>Here are the products you ordered.</p>
     <span>
-    <?php 
-        echo "Thank you for shopping ".$_POST['name'] . "<br>";
-             // Displays value of checked checkbox.
-        if(!empty($_POST['items'])){
-            // Loop to store and display values of individual checked checkbox.
-            foreach($_POST['items'] as $selected){
-            echo $selected."</br>";
+        <?php 
+            if (isset($_POST['name'])){
+                echo "<span class='name'>" .$_POST['name'] . "</span>, thank you for shopping with us."; // Displays value of checked checkbox.
+                }
+                // Displays value of checked checkbox.
+            if(!empty($_POST['items'])){
+                // Loop to store and display values of individual checked checkbox.
+                foreach($_POST['items'] as $selected){
+                echo $selected."</br>";
+                }
             }
-        }
-        if(!empty($_POST['img'])){
-            // Loop to store and display values of individual checked checkbox.
-            foreach($_POST['img'] as $selected){
-            echo $selected."</br>";
+            if(!empty($_POST['img'])){
+                // Loop to store and display values of individual checked checkbox.
+                foreach($_POST['img'] as $selected){
+                echo $selected."</br>";
+                }
             }
-        }
     ?></span>
+    </div>
 </body>
 </html>

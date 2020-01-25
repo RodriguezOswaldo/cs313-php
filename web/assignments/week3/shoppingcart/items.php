@@ -1,7 +1,7 @@
 <?php 
 session_start();
 
-$items = $name = $img = " ";
+
 
 ?>
 <!DOCTYPE html>
@@ -32,31 +32,31 @@ $items = $name = $img = " ";
 
 <body>
     <div class="container">
-        <form action="cart.php" method="POST">
+        <form action="sendToCart.php" method="POST">
             <label for="item">Select items from the list to add to your cart.</label><br>
             <label for="name">Name For The Order: </label>
             <input type="text" name="name" placeholder="name"><br>
             <label for="items[]">Items: </label><br>
             <div class="row">
                 <div class="col-sm">
-                    <img src="./img/robe.jpg" name="" alt="Jedi Robes"><br>
                     <input type="checkbox" name="items[]" id="jedirobes" value="Jedi Robes">Jedi Robes<br>
+                    <img src="./img/robe.jpg" name="" alt="Jedi Robes"><br><br>
                 </div>
                 <div class="col-sm">
-                    <img src="./img/soft.jpg" alt="Jedi Robes"><br>
                     <input type="checkbox" name="items[]" value="Soft Boots">Soft Boots<br>
+                    <img src="./img/soft.jpg" alt="Jedi Robes"><br><br>
                 </div>
                 <div class="col-sm">
-                    <img src="./img/sithcloak.jpg" alt="Jedi Robes"><br>
                     <input type="checkbox" name="items[]" value="Sith Cloak">Sith Cloak<br>
+                    <img src="./img/sithcloak.jpg" alt="Jedi Robes"><br><br>
                 </div>
                 <div class="col-sm">
-                    <img src="./img/lightsaber.jpg" alt="Jedi Robes"><br>
                     <input type="checkbox" name="items[]" value="Jedi Ligthsaber">Jedi Lightsaber<br>
+                    <img src="./img/lightsaber.jpg" alt="Jedi Robes"><br><br>
                 </div>
                 <div class="col-sm">
-                    <img src="./img/darklightsaber.jpg" alt="Jedi Robes"><br>
                     <input type="checkbox" name="items[]" value="Sith Ligthsaber">Sith Lightsaber<br>
+                    <img src="./img/darklightsaber.jpg" alt="Jedi Robes"><br><br>
                 </div>
             </div>
             <input type="submit" class="btn btn-outline-success" value="Order Now">

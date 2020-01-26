@@ -1,0 +1,17 @@
+body{
+    background: rgb(155, 161, 131);
+}
+img{
+    width:100%;
+}
+.name{
+    font-weight:bolder;
+}
+
+.footer{
+    text-align: center;
+    font-size: smaller;
+}
+h2{
+    text-align: center;
+}

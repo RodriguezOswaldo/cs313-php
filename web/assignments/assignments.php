@@ -26,6 +26,9 @@
         <li>
             <a target="_blank" title="form handling PHP" href="week3/shoppingcart/items.php">Shopping Cart</a>
         </li>
+        <li>
+            <a target="_blank" title="form handling PHP" href="week5/book.php">Book</a>
+        </li>
         
         </ul>
         <h2>This page is still considered work in Progress</h2>

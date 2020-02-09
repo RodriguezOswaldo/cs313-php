@@ -6,7 +6,7 @@
 * Description: This file shows the book lists of how to query a
 *   PostgreSQL database from PHP.
 ***********************************************************/
-
+session_start();
 require "connections.php";
 $db=get_db();
 ?><!DOCTYPE html>
@@ -35,7 +35,7 @@ $db=get_db();
         $category = $row['book_category_name'];
         $client = $row['client_name'];
         echo "<p><strong>Book Title</strong>: $title. <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"<p>";
-        // echo $client;
+        echo $client;
     }    
         ?>
     

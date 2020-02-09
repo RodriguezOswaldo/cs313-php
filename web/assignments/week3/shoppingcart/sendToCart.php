@@ -9,8 +9,5 @@ $_SESSION['name'] = $name;
 $cart = 'cart.php';
 header("Location: $cart");
 
-
-
-
 die();
 ?>

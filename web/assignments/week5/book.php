@@ -34,8 +34,8 @@ $db=get_db();
         $year = $row['book_release_year'];
         $category = $row['book_category_name'];
         $client = $row['client_name'];
+        // echo "<a href="">$client</a>;
         echo "<p><strong>Book Title</strong>: $title. <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"<p>";
-        echo $client;
     }    
         ?>
     

@@ -15,7 +15,7 @@ $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$book_title = $rows[0]['book_title'];
+$title = $rows[0]['book_title'];
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,10 +31,10 @@ $book_title = $rows[0]['book_title'];
         foreach($rows as $row)
         {
             $author = $row['author'];
-            $year = $row['book_release_year'];
-            $category = $row['book_category_name'];
-            $client = $row['client_name'];
-            echo "<p>$author </p>";
+            // $year = $row['book_release_year'];
+            // $category = $row['book_category_name'];
+            // $client = $row['client_name'];
+            echo '<p>$author </p>';
         }
     ?>
     </p>

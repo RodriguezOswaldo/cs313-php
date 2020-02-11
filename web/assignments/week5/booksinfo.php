@@ -25,7 +25,7 @@ $title = $rows[0]['book_title'];
     <title>Books Info</title>
 </head>
 <body>
-    <h2><?php echo $book_title;?></h2>
+    <h2><?php echo $title;?></h2>
     <p>
     <?php 
         foreach($rows as $row)

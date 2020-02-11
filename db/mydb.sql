@@ -42,3 +42,10 @@ INSERT INTO client(client_name,book_title) VALUES('Arthur Rodríguez','One Hundr
 INSERT INTO client(client_name,book_title) VALUES('Own Rodríguez','Hopscotch');
 INSERT INTO client(client_name,book_title) VALUES('Oswaldo Rodríguez','Thus Spoke Zarathustra');
 INSERT INTO client(client_name,book_title) VALUES('Leo Rodríguez','The Dark Tower: The Gunslinger');
+--Joins
+SELECT c.name, n.content FROM note n 
+JOIN course c ON n.course_id = c.id
+WHERE c.code = 'CS 313';
+
+SELECT b.book_title, b.author, b.book_release_year, b.book_category_name, cl.client_name FROM book b 
+JOIN client cl ON cl.book_title = b.book_title WHERE b.id = 1; 

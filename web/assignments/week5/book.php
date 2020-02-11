@@ -37,7 +37,7 @@ $db=get_db();
         $category = $row['book_category_name'];
         $client = $row['client_name'];
         // echo "<a href="">$client</a>;
-        echo "<li><p><a href='booksinfo.php?book_id=$id'><strong>Book Title</strong>: $title. <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"</a></p></li>";
+        echo "<li><p><a href='booksinfo.php?book_id=$id'><strong>Book Title</strong>: $title.  $id <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"</a></p></li>";
     }    
     ?>
     </ul>

@@ -30,3 +30,15 @@ INSERT INTO book (book_title, author, book_release_year, book_category_name, cli
 VALUES ('Thus Spoke Zarathustra', 'Friedrich Nietzsche', 1883, 'Philosophical Novel ', 'Oswaldo Rodríguez');
 INSERT INTO book (book_title, author, book_release_year, book_category_name, client_name)
 VALUES ('The Dark Tower: The Gunslinger', 'Stephen King', 1982, 'Fantasy Novel', 'Leo Rodríguez');
+
+INSERT INTO book_category(book_category_name) VALUES('Political');
+INSERT INTO book_category(book_category_name) VALUES('Magic Realism');
+INSERT INTO book_category(book_category_name) VALUES('Stream-of-consciousness');
+INSERT INTO book_category(book_category_name) VALUES('Philosophical Novel');
+INSERT INTO book_category(book_category_name) VALUES('Fantasy Novel');
+
+INSERT INTO client(client_name, book_title) VALUES('Lucas Rodríguez','Open Veins of Latin America' );
+INSERT INTO client(client_name,book_title) VALUES('Arthur Rodríguez','One Hundred Years of Solitude');
+INSERT INTO client(client_name,book_title) VALUES('Own Rodríguez','Hopscotch');
+INSERT INTO client(client_name,book_title) VALUES('Oswaldo Rodríguez','Thus Spoke Zarathustra');
+INSERT INTO client(client_name,book_title) VALUES('Leo Rodríguez','The Dark Tower: The Gunslinger');

@@ -19,7 +19,7 @@ $db=get_db();
 </head>
 <body>
     <h2>Full List of Books!</h2>
-    <li>
+    <ul>
     <?php
     $statement = $db->prepare("SELECT book_title, author, book_release_year, book_category_name, client_name FROM book");
     $statement->execute();
@@ -36,10 +36,10 @@ $db=get_db();
         $category = $row['book_category_name'];
         $client = $row['client_name'];
         // echo "<a href="">$client</a>;
-        echo "<ul><p><strong>Book Title</strong>: $title. <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"</p></ul>";
+        echo "<li><p><strong>Book Title</strong>: $title. <strong> Written by:</strong> $author. <strong>Originally Published:</strong> $year. <strong>Category:</strong>$category. Uploaded by: <strong>$client.</strong>\"</p></li>";
     }    
     ?>
-    </li>
+    </ul>
     
 </body>
 </html>

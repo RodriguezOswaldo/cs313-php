@@ -3,7 +3,7 @@ if(!isset($_GET['book_id']))
 {
     die('Error, book id not specified');
 }
-$book_id = htmlspecialchars($GET['book_id']);
+$book_id = htmlspecialchars($_GET['book_id']);
 
 ?><!DOCTYPE html>
 <html lang="en">

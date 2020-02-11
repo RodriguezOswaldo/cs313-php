@@ -14,7 +14,7 @@ $book_id = htmlspecialchars($GET['book_id']);
     <title>Books Info</title>
 </head>
 <body>
-    <h2>Books Info <?php echo $book_id?></h2>
+    <h2>Books Info<?php echo $book_id?></h2>
     <p></p>
 </body>
 </html>

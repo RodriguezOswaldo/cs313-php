@@ -13,7 +13,7 @@ $db=get_db();
 </head>
 <body>
     <h1>Topic Scripture</h1>
-    <form action="">
+    <form action="" method="post">
     <label for="book">Book:</label>
         <input type="text" id="book" name="book"><br>
     <label for="chapter">Chapter:</label>
@@ -33,7 +33,7 @@ $db=get_db();
                 $name= $topics['name'];
 
                 echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
-                echo "<label for='topics$id'>$name</label>";
+                echo "<label for='topics$id'>$name</label><br>";
             }
         ?>
 

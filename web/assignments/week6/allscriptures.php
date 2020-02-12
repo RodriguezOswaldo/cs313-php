@@ -10,17 +10,18 @@ $db = get_db();
     <title>Scriptures - Full List</title>
 </head>
 <body>
+<h2>Scriptures Full List</h2>
 <?php
     $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures');
     $stmt->execute();
     
-    while($row = $stmt ->fetch(PDO::FETCH_ASSOC))
+    while($row = $stmt->fetch(PDO::FETCH_ASSOC))
     {
         $book = $row['book'];
         $chapter = $row['chapter'];
         $verse = $row['verse'];
         $content = $row['content'];
-        echo $book;
+        echo 'SuccesS!';
     }
 ?>
 

@@ -16,10 +16,6 @@ $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $title = $book_rows[0]['book_title'];
-// $author = $rows[1]['author'];
-// $year = $rows[2]['book_release_year'];
-// $category = $rows[3]['book_category_name'];
-// $client  = $rows[4]['client_name'];
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +38,7 @@ $title = $book_rows[0]['book_title'];
 
         echo "<p><strong>Written by:</strong> $authorName.  </p>";
         echo "<p><strong>Originally Published:</strong> $year. </p>";
-        echo "<p><strong>Book Category:</strong>$category.</p>";
+        echo "<p><strong>Book Category:</strong> $category.</p>";
         echo "<p><strong>Uploaded by: </strong> $client.</p>";
     }
 

@@ -29,6 +29,9 @@
         <li>
             <a target="_blank" title="form handling PHP" href="week5/book.php">Book</a>
         </li>
+        <li>
+            <a target="_blank" title="form handling PHP" href="week6/scripture_topic.php">Book</a>
+        </li>
         
         </ul>
         <h2>This page is still considered work in Progress</h2>

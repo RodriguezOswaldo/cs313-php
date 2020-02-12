@@ -49,3 +49,59 @@ WHERE c.code = 'CS 313';
 
 SELECT b.book_title, b.author, b.book_release_year, b.book_category_name, cl.client_name FROM book b 
 JOIN client cl ON cl.book_title = b.book_title WHERE b.id = 1; 
+
+CREATE TABLE topic(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+
+);
+
+INSERT INTO topic(name) VALUES('Faith');
+INSERT INTO topic(name) VALUES('Sacrifice');
+INSERT INTO topic(name) VALUES('Charity');
+
+
+INSERT INTO scripture 
+( book
+, chapter
+, verse
+, content
+)
+VALUES 
+( 'Doctrine and Covenants'
+, 88
+, 49
+, 'The light shineth in darkness, and the darkness comprehendeth it not; nevertheless, the day shall come when you shall comprehend even God, being quickened in him and by him.'
+);
+
+INSERT INTO scripture 
+( book
+, chapter
+, verse
+, content
+)
+VALUES 
+( 'Doctrine and Covenants'
+, 93
+, 28
+, 'He that keepeth his commandments receiveth truth and light, until he is glorified in truth and knoweth all things.'
+);
+
+INSERT INTO scripture 
+( book
+, chapter
+, verse
+, content
+)
+VALUES 
+( 'Mosiah'
+, 16
+, 9
+, 'He is the light and the life of the world; yea, a light that is endless, that can never be darkened; yea, and also a life which is endless, that there can be no more death.'
+); 
+
+--MANY TO MANY RELATIONSHIPS
+CREATE TABLE topic_scripture(
+    topic_id int NOT NULL REFERENCES topic(id),
+    scripture_id int NOT NULL REFERENCES scripture(id)
+);

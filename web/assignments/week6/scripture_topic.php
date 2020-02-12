@@ -22,15 +22,15 @@ $db=get_db();
         <input type="text" id="verse" name="verse"><br>
         <label for="content" >Content:</label>
         <textarea name="content" id="content" cols="30" rows="10"></textarea>
-        <label for="topics">Topics</label><br>
+        <label for="topics">Topics: </label><br>
         <?php
             $stmt = $db->prepare('SELECT id, name FROM topic'); 
             $stmt->execute();
 
-            foreach ($topics as $stmt) 
+            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
-                $id = $topics['id'];
-                $name= $topics['name'];
+                $id = $row['id'];
+                $name= $row['name'];
 
                 echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
                 echo "<label for='topics$id'>$name</label><br>";

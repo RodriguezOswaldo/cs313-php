@@ -40,7 +40,7 @@ $title = $book_rows[0]['book_title'];
         $category = $book_row['book_category_name'];
         $client = $book_row['client_name'];
 
-        echo "<p>Written by:</strong> $authorName.  </p>";
+        echo "<p><strong>Written by:</strong> $authorName.  </p>";
         echo "<p><strong>Originally Published:</strong> $year. </p>";
         echo "<p><strong>Book Category:</strong>$category.</p>";
         echo "<p><strong>Uploaded by: </strong> $client.</p>";

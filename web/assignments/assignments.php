@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container cont-assignments">
         <div class="jumbotron text-center">
             <h1 title="Welcome to my portal!">Projects</h1>
             <p>Some projects from the Web Engineering II class</p>

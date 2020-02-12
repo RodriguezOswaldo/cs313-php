@@ -3,6 +3,9 @@ body{
     background: #42777e;
     text-align: center;
 }
+.cont-assignments{
+  text-align: left;
+}
 .sk-chase {
     width: 40px;
     height: 40px;

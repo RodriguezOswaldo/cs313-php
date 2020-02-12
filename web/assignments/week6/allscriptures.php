@@ -17,12 +17,12 @@ $db = get_db();
     echo 'SuccesS!';
     while($row = $stmt->fetch(PDO::FETCH_ASSOC))
     {
-        echo 'SuccesS!!';
+        
         $book = $row['book'];
         $chapter = $row['chapter'];
         $verse = $row['verse'];
         $content = $row['content'];
-        echo 'SuccesS!';
+        echo $book;
     }
 ?>
 

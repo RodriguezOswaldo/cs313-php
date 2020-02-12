@@ -14,6 +14,7 @@ $db=get_db();
     <title>Scriptures</title>
 </head>
 <body>
+<div class="container">
     <h1>Topic Scripture</h1>
     <form action="" method="post">
         <label for="book">Book:</label>
@@ -23,11 +24,12 @@ $db=get_db();
         <label for="verse">Verse:</label>
         <input type="text" id="verse" name="verse"><br>
         <label for="content" >Content:</label><br>
-        <textarea name="content" id="content" cols="30" rows="10"></textarea>
+        <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
         <label for="topics">Topics: </label><br>
         <?php
             $stmt = $db->prepare('SELECT * FROM topic'); 
             $stmt->execute();
+
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))
             {
                 $id = $row['id'];
@@ -36,8 +38,8 @@ $db=get_db();
                 echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
                 echo "<label for='topics$id'>$name</label><br>";
             }
-        ?>
-        <button >Submit</button>
+        ?><button >Submit</button>
     </form>
+    </div>
 </body>
 </html>

@@ -22,7 +22,7 @@ $db = get_db();
         $chapter = $row['chapter'];
         $verse = $row['verse'];
         $content = $row['content'];
-        echo $book;
+        echo "<li>$chapter: $book $verse $content</li>";
     }
 ?>
 

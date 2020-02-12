@@ -34,14 +34,17 @@ $title = $book_rows[0]['book_title'];
     <?php 
     foreach($book_rows as $book_row)
     {
+
         $authorName = $book_row['author'];
-        echo '<p>Written by:</strong> $authorName.  </p>';
+        $year = $book_row['year'];
+        $category = $book_row['category'];
+        $client = $book_row['client'];
+        
+        echo "<p>Written by:</strong> $authorName.  </p>";
+        echo "<p><strong>Originally Published:</strong> $year. </p>";
+        echo "<p><strong>Book Category:</strong>$category.</p>";
+        echo "<p><strong>Uploaded by: </strong> $client.</p>";
     }
-    
-            echo '<p>$title </p>';
-            echo '<p><strong>Originally Published:</strong> $year. </p>';
-            echo '<p><strong>Book Category:</strong>$category.</p>';
-            echo '<p><strong>Uploaded by: </strong> $client.</p>';
 
     ?>
     </p>

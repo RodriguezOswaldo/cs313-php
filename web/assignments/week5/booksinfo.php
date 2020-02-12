@@ -16,6 +16,10 @@ $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 $title = $rows[0]['book_title'];
+$author = $rows[1]['author'];
+$year = $rows[2]['book_release_year'];
+$category = $rows[3]['book_category_name'];
+$client  = $rows[4]['client_name'];
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,20 +32,13 @@ $title = $rows[0]['book_title'];
     <h2><?php echo $title;?></h2>
     <p>
     <?php 
-        foreach($rows as $row)
-        {
-            $titlename = $rows['title'];
-            $author = $rows['author'];
-            $year = $rows['book_release_year'];
-            $category = $rows['book_category_name'];
-            $client = $rows['client_name'];
-
+    
             echo '<p>$titlename </p>';
             echo '<p>Written by:</strong> $author.  </p>';
             echo '<p><strong>Originally Published:</strong> $year. </p>';
             echo '<p><strong>Book Category:</strong>$category.</p>';
             echo '<p><strong>Uploaded by: </strong> $client.</p>';
-        }
+
     ?>
     </p>
 </body>

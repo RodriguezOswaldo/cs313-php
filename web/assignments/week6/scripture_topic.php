@@ -30,7 +30,7 @@ $db=get_db();
             $stmt = $db->prepare('SELECT id, name FROM topic'); 
             $stmt->execute();
 
-            while ($row = $statement->fetch(PDO::FETCH_ASSOC))
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
             {
                 $id = $row['id'];
                 $name= $row['name'];

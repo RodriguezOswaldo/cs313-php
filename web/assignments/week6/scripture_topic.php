@@ -27,7 +27,7 @@ $db=get_db();
         <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
         <label for="topics">Topics: </label><br>
         <?php
-            $stmt = $db->prepare('SELECT * FROM topic'); 
+            $stmt = $db->prepare('SELECT id, name FROM topic'); 
             $stmt->execute();
 
             while ($row = $statement->fetch(PDO::FETCH_ASSOC))

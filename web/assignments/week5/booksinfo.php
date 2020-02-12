@@ -29,11 +29,11 @@ $client  = $rows[4]['client_name'];
     <title>Books Info</title>
 </head>
 <body>
-    <h2><?php echo $title;?></h2>
+    <h2><?php echo $title; ?></h2>
     <p>
     <?php 
     
-            echo '<p>$titlename </p>';
+            echo '<p>$title </p>';
             echo '<p>Written by:</strong> $author.  </p>';
             echo '<p><strong>Originally Published:</strong> $year. </p>';
             echo '<p><strong>Book Category:</strong>$category.</p>';

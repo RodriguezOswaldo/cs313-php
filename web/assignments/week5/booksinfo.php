@@ -15,7 +15,7 @@ $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-$title = $rows[0]['book_title'];
+$title = $book_rows[0]['book_title'];
 // $author = $rows[1]['author'];
 // $year = $rows[2]['book_release_year'];
 // $category = $rows[3]['book_category_name'];

@@ -36,10 +36,10 @@ $title = $book_rows[0]['book_title'];
     {
 
         $authorName = $book_row['author'];
-        $year = $book_row['year'];
-        $category = $book_row['category'];
-        $client = $book_row['client'];
-        
+        $year = $book_row['book_release_year'];
+        $category = $book_row['book_category_name'];
+        $client = $book_row['client_name'];
+
         echo "<p>Written by:</strong> $authorName.  </p>";
         echo "<p><strong>Originally Published:</strong> $year. </p>";
         echo "<p><strong>Book Category:</strong>$category.</p>";

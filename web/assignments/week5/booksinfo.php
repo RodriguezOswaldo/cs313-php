@@ -31,10 +31,15 @@ $title = $rows[0]['book_title'];
         foreach($rows as $row)
         {
             $author = $row['author'];
-            // $year = $row['book_release_year'];
-            // $category = $row['book_category_name'];
-            // $client = $row['client_name'];
-            echo '<p>$author </p>';
+            $year = $row['book_release_year'];
+            $category = $row['book_category_name'];
+            $client = $row['client_name'];
+
+            echo '<p>$title </p>';
+            echo '<p>Written by:</strong> $author.  </p>';
+            echo '<p><strong>Originally Published:</strong> $year. </p>';
+            echo '<p><strong>Book Category:</strong>$category.</p>';
+            echo '<p><strong>Uploaded by: </strong> $client.</p>';
         }
     ?>
     </p>

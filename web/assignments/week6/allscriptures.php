@@ -12,7 +12,7 @@ $db = get_db();
 <body>
 <h2>Scriptures Full List</h2>
 <?php
-    $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scriptures');
+    $stmt = $db->prepare('SELECT book, chapter, verse, content FROM scripture');
     $stmt->execute();
     echo 'SuccesS!';
     while($row = $stmt->fetch(PDO::FETCH_ASSOC))

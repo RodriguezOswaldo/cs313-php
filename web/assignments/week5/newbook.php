@@ -26,7 +26,7 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
-    <!-- <input type="hidden" name="book_id" value="<?php echo $book_id; ?>"> -->
+    <!-- <input type="hidden" name="book_id" value=""> -->
         <label for="book_title">Book:</label>
         <input type="text" id="book_title" name="book_title"><br>
         <!-- <label for="chapter">Chapter:</label>

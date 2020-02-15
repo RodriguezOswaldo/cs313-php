@@ -7,5 +7,6 @@ $stmt = $db->prepare('SELECT b.book_title, b.author, b.book_release_year, b.book
 JOIN client cl ON cl.book_title = b.book_title WHERE b.id =:id;');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
+echo 'yo are here';
 
 ?>

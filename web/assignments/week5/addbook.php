@@ -1,4 +1,5 @@
 <?php
+$book_title = htmlspecialchars($POST['book_title']);
 session_start();
 require 'connections.php';
 $db = get_db();
@@ -8,5 +9,6 @@ JOIN client cl ON cl.book_title = b.book_title WHERE b.id =:id;');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 echo 'yo are here';
+echo $book_title;
 
 ?>

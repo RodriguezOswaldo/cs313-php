@@ -28,7 +28,10 @@
         </li>
         <li>
             <a target="_blank" title="form handling PHP" href="week5/book.php">Book</a>
+        </li><li>
+            <a target="_blank" title="form handling PHP" href="week5/newbook.php">New Book</a>
         </li>
+        
         <li>
             <a target="_blank" title="form handling PHP" href="week6/scripture_topic.php">Scriptures - Many to Many Relationships</a>
         </li>

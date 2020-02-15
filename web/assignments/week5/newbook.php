@@ -1,13 +1,7 @@
 <?php
-//bring the connections file to the scope 
-session_start();
-if(!isset($_GET['book_id']))
-{
-    die('Error, book id not specified');
-}
-$book_id = htmlspecialchars($_GET['book_id']);
 //Get Connections
 require 'connections.php';
+
 $db = get_db();
 //From the preparation
 $stmt = $db->prepare('SELECT b.book_title, b.author, b.book_release_year, b.book_category_name, cl.client_name FROM book b 
@@ -15,6 +9,7 @@ JOIN client cl ON cl.book_title = b.book_title WHERE b.id =:id;');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +22,7 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
-    <!-- <input type="hidden" name="book_id" value=""> -->
+    <input type="hidden" name="book_id" value="">
         <label for="book_title">Book:</label>
         <input type="text" id="book_title" name="book_title"><br>
         <!-- <label for="chapter">Chapter:</label>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 //Get Connections
 require 'connections.php';
 
@@ -22,7 +23,6 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
-    <input type="hidden" name="book_id" value="">
         <label for="book_title">Book:</label>
         <input type="text" id="book_title" name="book_title"><br>
         <!-- <label for="chapter">Chapter:</label>
@@ -32,19 +32,7 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <label for="content" >Content:</label><br>
         <textarea name="content" id="content" cols="30" rows="10"></textarea><br>
         <label for="topics">Topics: </label><br> -->
-        <?php
-            $stmt = $db->prepare('SELECT id, name FROM topic'); 
-            $stmt->execute();
-
-            while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
-            {
-                $id = $row['id'];
-                $name= $row['name'];
-
-                echo "<input type='checkbox' name='topics[]' id='topics$id' value='$id'>";
-                echo "<label for='topics$id'>$name</label><br>";
-            }
-        ?><button type="submit" >Submit</button>
+        <button type="submit" >Submit</button>
     </form>
     </div>
 </body>

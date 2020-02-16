@@ -11,7 +11,7 @@ require 'connections.php';
 
 $db = get_db();
 
-$stmt = $db->prepare('DELETE FROM book WHERE book_id =:id');
+$stmt = $db->prepare('DELETE FROM client WHERE id =:id');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stme->execute();
 

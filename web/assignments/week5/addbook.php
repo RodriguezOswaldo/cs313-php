@@ -12,7 +12,7 @@ $db = get_db();
 
 
 $stmt = $db->prepare('INSERT INTO book (id, book_title, author, book_release_year, book_category_name, client_name)
-VALUES (:_id, :book_title, :author, :book_release_year, :book_category_name, :client_name);');
+VALUES (:id, :book_title, :author, :book_release_year, :book_category_name, :client_name);');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_STR);
 $stmt->bindValue(':book_title', $book_title, PDO::PARAM_STR);
 $stmt->bindValue(':author', $author, PDO::PARAM_STR);

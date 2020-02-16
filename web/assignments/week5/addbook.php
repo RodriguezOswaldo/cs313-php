@@ -21,10 +21,10 @@ $db = get_db();
 
 echo 'yo are here\n';
 echo $book_title;
-// echo $author;
-// echo $book_release_year;
-// echo $book_category_name;
-// echo $client_name;
+echo $author;
+echo $book_release_year;
+echo $book_category_name;
+echo $client_name;
 
 // I'll use this line of code later when I'm adding specific IDs
 //sending the user back to this page after submitting the form

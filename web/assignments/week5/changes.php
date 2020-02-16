@@ -26,9 +26,10 @@ $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
 echo 'I am here5!';
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 echo 'I am here6!';
-$stmt->execute();
 echo 'I am here!7';
-exit;
+
+$stmt->execute();
+echo 'executed!';
 // $stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE  b.id =:id;');
 // $stmt2->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 // $stmt2->bindValue(':book_title', $book_title, PDO::PARAM_STR);

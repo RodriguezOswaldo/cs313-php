@@ -1,11 +1,15 @@
 <?php
 //From the preparation
+echo 'I am here!';
+
 $book_title = htmlspecialchars($_POST['book_title']);
 $author = htmlspecialchars($_POST['author']);
 $book_release_year = htmlspecialchars($_POST['book_release_year']);
 $book_category_name = htmlspecialchars($_POST['book_category_name']);
 $client_name = htmlspecialchars($_POST['client_name']);
 $id = htmlspecialchars($_POST['book_id']);
+echo 'I am here!2!';
+exit;
 
 require 'connections.php';
 $db = get_db();

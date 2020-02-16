@@ -15,19 +15,11 @@ $db = get_db();
 
 $stmt = $db->prepare('UPDATE book SET book_title = :book_title, author = :author, book_release_year = :book_release_year,book_category_name = :book_category_name, client_name = :client_name  =  WHERE book_id =:book_id;');
 $stmt->bindValue(':book_id', $id, PDO::PARAM_INT);
-echo 'I am here!';
 $stmt->bindValue(':book_title', $book_title, PDO::PARAM_STR);
-echo 'I am here2!';
 $stmt->bindValue(':author', $author, PDO::PARAM_STR);
-echo 'I am here3!';
 $stmt->bindValue(':book_release_year', $book_release_year, PDO::PARAM_INT);
-echo 'I am here4!';
 $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
-echo 'I am here5!';
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
-echo 'I am here6!';
-echo 'I am here!7';
-
 $stmt->execute();
 echo 'executed!';
 // $stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE  b.id =:id;');

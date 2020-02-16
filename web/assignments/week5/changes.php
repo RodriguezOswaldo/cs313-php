@@ -20,6 +20,8 @@ $stmt->bindValue(':author', $author, PDO::PARAM_STR);
 $stmt->bindValue(':book_release_year', $book_release_year, PDO::PARAM_INT);
 $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
+
+//I commented out the execute because it was breaking the project.
 // $stmt->execute();
 echo 'executed!';
 // $stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE  b.id =:id;');
@@ -35,7 +37,8 @@ echo $client_name;
 
 // I'll use this line of code later when I'm adding specific IDs
 //sending the user back to this page after submitting the form
-$new_page = "booksinfo.php?book_id=$id";
+//$new_page = "booksinfo.php?book_id=$id";
+$new_page = "workinprogress.php";
 
 header("location: $new_page");
 die();

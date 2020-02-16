@@ -13,7 +13,7 @@ CREATE TABLE book_category(
 );
 CREATE TABLE client(
     id SERIAL PRIMARY KEY,
-    client_name VARCHAR(100) NOT NULL UNIQUE,
+    client_name VARCHAR(100) NOT NULL,
     book_title VARCHAR(100) NOT NULL REFERENCES book(book_title)
 );
 DROP TABLE book_category;
@@ -38,12 +38,14 @@ INSERT INTO book_category(book_category_name) VALUES('Magic Realism');
 INSERT INTO book_category(book_category_name) VALUES('Stream-of-consciousness');
 INSERT INTO book_category(book_category_name) VALUES('Philosophical Novel');
 INSERT INTO book_category(book_category_name) VALUES('Fantasy Novel');
+INSERT INTO book_category(book_category_name) VALUES('Fiction');
 
 INSERT INTO client(client_name, book_title) VALUES('Lucas Rodríguez','Open Veins of Latin America' );
 INSERT INTO client(client_name,book_title) VALUES('Arthur Rodríguez','One Hundred Years of Solitude');
 INSERT INTO client(client_name,book_title) VALUES('Own Rodríguez','Hopscotch');
 INSERT INTO client(client_name,book_title) VALUES('Oswaldo Rodríguez','Thus Spoke Zarathustra');
 INSERT INTO client(client_name,book_title) VALUES('Leo Rodríguez','The Dark Tower: The Gunslinger');
+INSERT INTO client(client_name,book_title) VALUES('Oswaldo Rodríguez','Mornin, Noon & Night');
 --Joins
 SELECT c.name, n.content FROM note n 
 JOIN course c ON n.course_id = c.id

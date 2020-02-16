@@ -29,9 +29,9 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <form action="addbook.php" method="post">
         <!-- <input type="hidden" name="book_id" value="id"> -->
         <label for="book_title">Book:</label><br>
-        <input type="text" id="book_title" name="book_title" ><br>
+        <input type="text" id="book_title" name="book_title" required><br>
         <label for="author">Author:</label><br>
-        <input type="text" id="author" name="author" ><br>
+        <input type="text" id="author" name="author" required><br>
         <label for="book_release_year">Book Release Year:</label><br>
         <input type="text" id="book_release_year" name="book_release_year" ><br>
         <label for="book_category_name" >Book Category Name:</label><br>

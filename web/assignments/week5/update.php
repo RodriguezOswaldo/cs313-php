@@ -43,8 +43,8 @@ $title = $book_rows[0]['book_title'];
 
     ?>
    
-    <form action="addbook.php" method="post">
-        <!-- <input type="hidden" name="book_id" value="id"> -->
+    <form action="changes.php" method="post">
+        <input type="hidden" name="book_id" value="<?php echo $book_id; ?>">
         <label for="book_title">Book:</label><br>
         <input type="text" id="book_title" name="book_title" value="<?php if (isset($title)) { echo $title; } ?>" required><br>
         <label for="author">Author:</label><br>

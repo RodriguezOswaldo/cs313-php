@@ -111,4 +111,4 @@ CREATE TABLE topic_scripture(
 );
 
 
--- UPDATE book SET id = 7 WHERE author_name = 'for me';
+UPDATE book SET id = 7 WHERE author_name = 'for me';

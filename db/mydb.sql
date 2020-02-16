@@ -105,3 +105,6 @@ CREATE TABLE topic_scripture(
     topic_id int NOT NULL REFERENCES topic(id),
     scripture_id int NOT NULL REFERENCES scripture(id)
 );
+
+
+-- UPDATE book SET id = 7 WHERE author_name = 'for me';

@@ -38,7 +38,7 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <input name="book_category_name" id="book_category_name"><br>
         <label for="client_name" > User Name:</label><br>
         <input name="client_name" id="client_name"><br>
-        <button type="submit" >Submit</button>
+        <button class="btn-info" type="submit" >Submit</button>
     </form>
     </div>
 </body>

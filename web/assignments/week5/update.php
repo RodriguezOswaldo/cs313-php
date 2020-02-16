@@ -46,15 +46,15 @@ $title = $book_rows[0]['book_title'];
     <form action="addbook.php" method="post">
         <!-- <input type="hidden" name="book_id" value="id"> -->
         <label for="book_title">Book:</label><br>
-        <input type="text" id="book_title" name="book_title" value="<?php if (isset($title)) { echo $title; } ?>"required><br>
+        <input type="text" id="book_title" name="book_title" value="<?php if (isset($title)) { echo $title; } ?>" required><br>
         <label for="author">Author:</label><br>
-        <input type="text" id="author" name="author" required><br>
+        <input type="text" id="author" name="author" value="<?php if (isset($authorName)) { echo $authorName; } ?>" required><br>
         <label for="book_release_year">Book Release Year:</label><br>
-        <input type="text" id="book_release_year" name="book_release_year" required><br>
+        <input type="text" id="book_release_year" name="book_release_year" value="<?php if (isset($year)) { echo $year; } ?>" required><br>
         <label for="book_category_name" >Book Category Name:</label><br>
-        <input name="book_category_name" id="book_category_name" required><br>
+        <input name="book_category_name" id="book_category_name" value="<?php if (isset($category)) { echo $category; } ?>" required><br>
         <label for="client_name" > User Name:</label><br>
-        <input name="client_name" id="client_name" required><br><br>
+        <input name="client_name" id="client_name" value="<?php if (isset($client)) { echo $client; } ?>" required><br><br>
         <button class="btn-info" type="submit" >Submit</button>
     </form>
    

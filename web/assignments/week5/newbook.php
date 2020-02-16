@@ -1,6 +1,6 @@
 <?php
 session_start();
-require 'boojk.php';
+require 'book.php';
 if(!isset($_POST['book_id']))
 {
     die('Error, book id not specified');

@@ -18,7 +18,7 @@ $stmt->bindValue(':book_release_year', $book_release_year, PDO::PARAM_INT);
 $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 $stmt->execute();
-$stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE client_name = :client_name');
+$stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE  b.id =:id;');
 $stmt2->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 $stmt2->bindValue(':book_title', $book_title, PDO::PARAM_STR);
 $stmt2->execute();

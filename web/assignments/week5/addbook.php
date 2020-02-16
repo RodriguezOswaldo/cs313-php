@@ -28,8 +28,8 @@ echo $client_name;
 
 // I'll use this line of code later when I'm adding specific IDs
 //sending the user back to this page after submitting the form
-// $new_page = "course_notes.php?course_id=$course_id";
+$new_page = "book.php";
 
-// header("location: $new_page");
-// die();
+header("location: $new_page");
+die();
 ?>

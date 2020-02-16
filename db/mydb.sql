@@ -30,6 +30,8 @@ INSERT INTO book (book_title, author, book_release_year, book_category_name, cli
 VALUES ('Thus Spoke Zarathustra', 'Friedrich Nietzsche', 1883, 'Philosophical Novel ', 'Oswaldo Rodríguez');
 INSERT INTO book (book_title, author, book_release_year, book_category_name, client_name)
 VALUES ('The Dark Tower: The Gunslinger', 'Stephen King', 1982, 'Fantasy Novel', 'Leo Rodríguez');
+INSERT INTO book (book_title, author, book_release_year, book_category_name, client_name)
+VALUES ('Mornin, Noon & Night', 'Sidney Sheldon', 1995, 'Fiction', 'Oswaldo Rodriguez');
 
 INSERT INTO book_category(book_category_name) VALUES('Political');
 INSERT INTO book_category(book_category_name) VALUES('Magic Realism');

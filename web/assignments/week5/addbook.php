@@ -2,10 +2,11 @@
 session_start();
 require 'connections.php';
 $db = get_db();
+
 //From the preparation
 $book_title = htmlspecialchars($_POST['book_title']);
 $book_title = htmlspecialchars($_POST['author']);
-$book_release_yeargit = htmlspecialchars($_POST['book_release_year']);
+$book_release_year = htmlspecialchars($_POST['book_release_year']);
 $book_category_name = htmlspecialchars($_POST['book_category_name']);
 $client_name = htmlspecialchars($_POST['client_name']);
 

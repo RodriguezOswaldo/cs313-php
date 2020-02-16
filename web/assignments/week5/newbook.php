@@ -1,10 +1,11 @@
 <?php
 session_start();
-if(!isset($_GET['book_id']))
+require 'boojk.php';
+if(!isset($_POST['book_id']))
 {
     die('Error, book id not specified');
 }
-$book_id = htmlspecialchars($_GET['book_id']);
+$book_id = htmlspecialchars($_POST['book_id']);
 //Get Connections
 require 'connections.php';
 

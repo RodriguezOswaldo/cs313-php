@@ -24,27 +24,40 @@ $title = $book_rows[0]['book_title'];
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous"> 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Books Info</title>
+    <title>Update Book</title>
 </head>
 <body>
     <div class="container">
+    <h1>Update Book</h1>
     <h2><?php echo $title; ?></h2>
     <p>
     <?php 
     foreach($book_rows as $book_row)
     {
+        $title = $book_row['book_title'];
         $authorName = $book_row['author'];
         $year = $book_row['book_release_year'];
         $category = $book_row['book_category_name'];
         $client = $book_row['client_name'];
-        echo "<p><strong>Written by:</strong> $authorName.  </p>";
-        echo "<p><strong>Originally Published:</strong> $year. </p>";
-        echo "<p><strong>Book Category:</strong> $category.</p>";
-        echo "<p><strong>Uploaded by: </strong> $client.</p>";
     }
 
     ?>
-    </p>
+   
+    <form action="addbook.php" method="post">
+        <!-- <input type="hidden" name="book_id" value="id"> -->
+        <label for="book_title">Book:</label><br>
+        <input type="text" id="book_title" name="book_title" value="<?php if (isset($title)) { echo $title; } ?>"required><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" name="author" required><br>
+        <label for="book_release_year">Book Release Year:</label><br>
+        <input type="text" id="book_release_year" name="book_release_year" required><br>
+        <label for="book_category_name" >Book Category Name:</label><br>
+        <input name="book_category_name" id="book_category_name" required><br>
+        <label for="client_name" > User Name:</label><br>
+        <input name="client_name" id="client_name" required><br><br>
+        <button class="btn-info" type="submit" >Submit</button>
+    </form>
+   
     </div>
 </body>
 </html>

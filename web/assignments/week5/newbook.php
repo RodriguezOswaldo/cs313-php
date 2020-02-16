@@ -12,14 +12,7 @@ $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-foreach($book_rows as $book_row)
-{
-    $book_id = $book_row['id'];
-    $authorName = $book_row['author'];
-    $year = $book_row['book_release_year'];
-    $category = $book_row['book_category_name'];
-    $client = $book_row['client_name'];
-}
+
 
 ?><!DOCTYPE html>
 <html lang="en">
@@ -37,7 +30,7 @@ foreach($book_rows as $book_row)
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
-        <input type="hidden" name="book_id" value="<?php echo $book_id; ?>">
+        <input type="hidden" name="book_id" value="id">
         <label for="book_title">Book:</label><br>
         <input type="text" id="book_title" name="book_title"><br>
         <label for="author">Author:</label><br>

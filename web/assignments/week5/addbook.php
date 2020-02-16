@@ -1,19 +1,19 @@
 <?php
 //From the preparation
+$book_id = htmlspecialchars($_POST['book_id']);
 $book_title = htmlspecialchars($_POST['book_title']);
 $author = htmlspecialchars($_POST['author']);
 $book_release_year = htmlspecialchars($_POST['book_release_year']);
 $book_category_name = htmlspecialchars($_POST['book_category_name']);
 $client_name = htmlspecialchars($_POST['client_name']);
-$book_id = htmlspecialchars($_POST['book_id']);
 
 require 'connections.php';
 $db = get_db();
 
 
 $stmt = $db->prepare('INSERT INTO book (id, book_title, author, book_release_year, book_category_name, client_name)
-VALUES (:book_id, :book_title, :author, :book_release_year, :book_category_name, :client_name);');
-$stmt->bindValue(':book_id', $book_id, PDO::PARAM_STR);
+VALUES (:_id, :book_title, :author, :book_release_year, :book_category_name, :client_name);');
+$stmt->bindValue(':id', $book_id, PDO::PARAM_STR);
 $stmt->bindValue(':book_title', $book_title, PDO::PARAM_STR);
 $stmt->bindValue(':author', $author, PDO::PARAM_STR);
 $stmt->bindValue(':book_release_year', $book_release_year, PDO::PARAM_INT);

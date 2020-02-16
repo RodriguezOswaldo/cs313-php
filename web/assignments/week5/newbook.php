@@ -11,9 +11,6 @@ JOIN client cl ON cl.book_title = b.book_title WHERE b.id =:id;');
 $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-
-
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

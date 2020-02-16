@@ -20,17 +20,16 @@ $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 $stmt->execute();
 
-// echo 'yo are here\n';
-// echo $book_title;
-// echo $author;
-// echo $book_release_year;
-// echo $book_category_name;
-// echo $client_name;
+echo 'yo are here\n';
+echo $book_title;
+echo $author;
+echo $book_release_year;
+echo $book_category_name;
+echo $client_name;
 
 // I'll use this line of code later when I'm adding specific IDs
 //sending the user back to this page after submitting the form
 $new_page = "book.php";
-
 header("location: $new_page");
 die();
 ?>

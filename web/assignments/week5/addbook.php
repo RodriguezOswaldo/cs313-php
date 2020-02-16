@@ -1,6 +1,5 @@
 <?php
 //From the preparation
-
 $book_title = htmlspecialchars($_POST['book_title']);
 $author = htmlspecialchars($_POST['author']);
 $book_release_year = htmlspecialchars($_POST['book_release_year']);
@@ -30,6 +29,7 @@ echo $client_name;
 // I'll use this line of code later when I'm adding specific IDs
 //sending the user back to this page after submitting the form
 $new_page = "book.php";
+
 header("location: $new_page");
 die();
 ?>

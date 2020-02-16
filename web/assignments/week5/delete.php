@@ -11,8 +11,8 @@ require 'connections.php';
 
 $db = get_db();
 
-$stmt = $db->prepare('DELETE FROM book WHERE id =:book_id');
-$stmt->bindValue(':book_id', $book_id, PDO::PARAM_INT);
+$stmt = $db->prepare('DELETE FROM book WHERE book_id =:id');
+$stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stme->execute();
 
 $new_page = "book.php";

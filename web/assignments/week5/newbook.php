@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(!isset($_GET['book_id']))
+{
+    die('Error, book id not specified');
+}
+$book_id = htmlspecialchars($_GET['book_id']);
 //Get Connections
 require 'connections.php';
 
@@ -27,6 +32,7 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
+        <input type="hidden" name="book_id" value="<?php echo $book_id; ?>">
         <label for="book_title">Book:</label><br>
         <input type="text" id="book_title" name="book_title"><br>
         <label for="author">Author:</label><br>

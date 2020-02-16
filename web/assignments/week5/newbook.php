@@ -33,11 +33,11 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <label for="author">Author:</label><br>
         <input type="text" id="author" name="author" required><br>
         <label for="book_release_year">Book Release Year:</label><br>
-        <input type="text" id="book_release_year" name="book_release_year" ><br>
+        <input type="text" id="book_release_year" name="book_release_year" required><br>
         <label for="book_category_name" >Book Category Name:</label><br>
-        <input name="book_category_name" id="book_category_name" ><br>
+        <input name="book_category_name" id="book_category_name" required><br>
         <label for="client_name" > User Name:</label><br>
-        <input name="client_name" id="client_name" ><br><br>
+        <input name="client_name" id="client_name" required><br><br>
         <button class="btn-info" type="submit" >Submit</button>
     </form>
     </div>

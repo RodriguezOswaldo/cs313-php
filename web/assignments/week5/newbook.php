@@ -23,14 +23,14 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <h1>Add A New Book</h1>
     <form action="addbook.php" method="post">
-        <label for="book_title">Book:</label>
+        <label for="book_title">Book:</label><br>
         <input type="text" id="book_title" name="book_title"><br>
-        <label for="author">Author:</label>
+        <label for="author">Author:</label><br>
         <input type="text" id="author" name="author"><br>
-        <label for="book_release_year">Book Release Year:</label>
+        <label for="book_release_year">Book Release Year:</label><br>
         <input type="text" id="book_release_year" name="book_release_year"><br>
         <label for="book_category_name" >Book Category Name:</label><br>
-        <input name="book_category_name" id="book_category_name">
+        <input name="book_category_name" id="book_category_name"><br>
         <label for="client_name" > User Name:</label><br>
         <input name="client_name" id="client_name"><br>
         <button type="submit" >Submit</button>

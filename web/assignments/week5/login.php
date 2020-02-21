@@ -21,6 +21,8 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     $result = $stmt->execute();
     echo $result[0];
 
+}
+
 //     if($result)
 //     {
 //         $row = $stmt->fetch();

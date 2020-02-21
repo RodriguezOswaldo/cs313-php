@@ -11,4 +11,15 @@ $password = $_POST['acct_password'];
     header("Location: register.php");
     die();
  }
+ $username = htmlspecialchars($username);
+ $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
+ require("connections.php");
+ $db = get_db();
+
+ $query = 'INSERT INTO user(acct_name, acct_password) VALUES (:username, :password)';
+ $stmt = $db->prepare($query);
+ $stmt->bindValue(':username',$username);
+ $stmt->bindValue(':password',$hashedPassword);
+ $stmt->execute();
 ?>

@@ -32,7 +32,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     <input type="text" name="acct_name" id="username" placeholder="Username">
     <label for="username">Username</label>
     <input type="password" name="acct_password" id="password" placeholder="Password">
-    <label for="password">Password</label>
+    <label for="password">Password</label><br>
     <input type="submit" value="Login" class="btn btn-outline-success">
 </form>
 <br>

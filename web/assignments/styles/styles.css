@@ -6,7 +6,9 @@ body{
 html{
   background: #4f8d96;
 }
-
+.container{
+  background: #4f8d96;
+}
 
 .cont-assignments{
   text-align: left;

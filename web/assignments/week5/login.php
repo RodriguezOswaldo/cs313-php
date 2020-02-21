@@ -28,12 +28,16 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         // echo $hashedPassword;
         // exit;
         //Checking if the password match
-        if(password_verify($password, $hashedpassword))
-        {
-            $_SESSION['username'] = $username;
-            header("Location: book.php");
-            die();
-        }
+
+        header("Location: book.php");
+        die();
+        // if(password_verify($password, $hashedpassword))
+        // {
+        //     $_SESSION['acct_name'] = $username;
+        //     echo 'you are here';
+        //     // header("Location: book.php");
+        //     die();
+        // }
     }
 }
 //         else

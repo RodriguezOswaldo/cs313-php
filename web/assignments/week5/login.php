@@ -21,10 +21,12 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous"> 
+        <link rel="stylesheet" href="styles/styles.css">
     <title>Login to the BookShelf!</title>
 </head>
 <body>
 <div class="container">
+<div class="loginbox">
 <h1> Login</h1>
 <form id="login" action="login.php" method="POST">
     <input type="text" name="acct_name" id="username" placeholder="Username">
@@ -35,6 +37,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
 </form>
 <br>
 <p>New? then <a href="register.php">Register</a> for a new Account.</p>
+</div>
 </div>
     
 </body>

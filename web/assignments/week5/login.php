@@ -9,7 +9,22 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     //db connection
     require 'connections.php';
     $db = get_db();
-    
+
+    $query = 'SELECT acct_password FROM user WHERE acct_name =:username';
+    $stmt = $db->prepare($query);
+    $stmt->bindValue(':username', $username);
+    $result = $stmt->execute();
+    if($result)
+    {
+        $row = $stmt->fetch();
+        $hashedpassword($row['password']);
+
+        if(password_verify($password, $hashedpassword))
+        {
+            $_SESSION['acct_name'] = $username;
+            header('Location: book.php');
+        }
+    }    
 }
 ?><!DOCTYPE html>
 <html lang="en">

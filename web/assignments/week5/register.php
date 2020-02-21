@@ -14,17 +14,17 @@
 <body>
 <div class="container">
     <div class="loginbox">
-<h1> Register!</h1>
-<form id="login" action="newAccount.php" method="POST">
-    <input type="text" name="acct_name" id="username" placeholder="Username">
-    <label for="username">Username</label>
-    <input type="password" name="acct_password" id="password" placeholder="Password">
-    <label for="password">Password</label><br>
-    <input type="submit" value="Register" class="btn btn-outline-success">
-</form>
-<br>
-<p>Already have an account? then try <a href="login.php">Login</a></p>
-</div>
+        <h1> Register!</h1>
+        <form id="login" action="newAccount.php" method="POST">
+            <input type="text" name="acct_name" id="username" placeholder="Username">
+            <label for="username">Username</label>
+            <input type="password" name="acct_password" id="password" placeholder="Password">
+            <label for="password">Password</label><br>
+            <input type="submit" value="Register" class="btn btn-outline-success">
+        </form>
+        <br>
+        <p>Already have an account? then try <a href="login.php">Login</a></p>
+    </div>
 </div>
     
 </body>

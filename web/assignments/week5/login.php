@@ -3,12 +3,15 @@ session_start();
 $loginFailed = false;
     $username = $_POST['acct_name'];
     $password = $_POST['acct_password'];
-    echo $username, $password;
-// if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
+   
+if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
 
-//     $username = $_POST['acct_name'];
-//     $password = $_POST['acct_password'];
-//     //db connection
+    $username = $_POST['acct_name'];
+    $password = $_POST['acct_password'];
+    echo $username, $password;
+    exit;
+}
+    //db connection
 //     require 'connections.php';
 //     $db = get_db();
 

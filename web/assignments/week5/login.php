@@ -25,20 +25,20 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     <title>Login to the BookShelf!</title>
 </head>
 <body>
-<div class="container">
-<div class="loginbox">
-<h1> Login</h1>
-<form id="login" action="login.php" method="POST">
-    <input type="text" name="acct_name" id="username" placeholder="Username">
-    <label for="username">Username</label>
-    <input type="password" name="acct_password" id="password" placeholder="Password">
-    <label for="password">Password</label><br>
-    <input type="submit" value="Login" class="btn btn-outline-success">
-</form>
-<br>
-<p>New? then <a href="register.php">Register</a> for a new Account.</p>
-</div>
-</div>
+    <div class="container">
+        <div class="loginbox">
+            <h1> Login</h1>
+            <form id="login" action="login.php" method="POST">
+                <input type="text" name="acct_name" id="username" placeholder="Username">
+                <label for="username">Username</label>
+                <input type="password" name="acct_password" id="password" placeholder="Password">
+                <label for="password">Password</label><br>
+                <input type="submit" value="Login" class="btn btn-outline-success">
+            </form>
+            <br>
+            <p>New? then <a href="register.php">Register</a> for a new Account.</p>
+        </div>
+    </div>
     
 </body>
 </html>

@@ -28,14 +28,17 @@
         </li>
         <li>
             <a target="_blank" title="form handling PHP" href="week5/book.php">Book</a>
-        </li><li>
+        </li>
+        <li>
             <a target="_blank" title="form handling PHP" href="week5/newbook.php">New Book</a>
         </li>
         
         <li>
             <a target="_blank" title="form handling PHP" href="week6/scripture_topic.php">Scriptures - Many to Many Relationships</a>
         </li>
-        
+        <li>
+            <a target="_blank" title="form handling PHP" href="week5/login.php">Login</a>
+        </li>
         </ul>
         <h2>This page is still considered work in Progress</h2>
         <div class="sk-chase">

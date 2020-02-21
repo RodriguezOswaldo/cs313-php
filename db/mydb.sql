@@ -110,5 +110,9 @@ CREATE TABLE topic_scripture(
     scripture_id int NOT NULL REFERENCES scripture(id)
 );
 
-
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY,
+    acct_name VARCHAR(60),
+    acct_password VARCHAR(100)
+);
 UPDATE book SET id = 7 WHERE author_name = 'for me';

@@ -21,7 +21,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
         crossorigin="anonymous"> 
-        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="asignments/styles/styles.css">
     <title>Login to the BookShelf!</title>
 </head>
 <body>

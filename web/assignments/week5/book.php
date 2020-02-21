@@ -23,6 +23,7 @@ $db=get_db();
     <title>Books List!</title>
 </head>
 <body>
+    <div class="container">
     <h2>Full List of Books!</h2>
     <ul>
     <?php
@@ -48,6 +49,6 @@ $db=get_db();
     </ul>
 
     <p>Do you want to contribute to the bookshelf? then<a href="newbook.php">Add a Book</a> yourself</p> 
-    
+    </div>
 </body>
 </html>

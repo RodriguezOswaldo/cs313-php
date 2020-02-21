@@ -22,4 +22,7 @@ $password = $_POST['acct_password'];
  $stmt->bindValue(':username',$username);
  $stmt->bindValue(':password',$hashedPassword);
  $stmt->execute();
+
+ header("Location: login.php");
+ die();
 ?>

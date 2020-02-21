@@ -19,21 +19,21 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username);
     $result = $stmt->execute();
-    echo "sucess";
+    // echo "sucess";
 
+    if($result)
+    {
+        $row = $stmt->fetch();
+        $hashedpassword($row['acct_password']);
+        //Checking if they match
+        if(password_verify($password, $hashedpassword))
+        {
+            $_SESSION['acct_name'] = $username;
+            header('Location: book.php');
+            die();
+        }
+    }
 }
-
-//     if($result)
-//     {
-//         $row = $stmt->fetch();
-//         $hashedpassword($row['password']);
-
-//         if(password_verify($password, $hashedpassword))
-//         {
-//             $_SESSION['acct_name'] = $username;
-//             header('Location: book.php');
-//             die();
-//         }
 //         else
 //         {
 //             $loginFailed = true;

@@ -23,8 +23,17 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         {
             $_SESSION['acct_name'] = $username;
             header('Location: book.php');
+            die();
+        }
+        else
+        {
+            $loginFailed = true;
         }
     }    
+    else
+    {
+        $loginFailed = true;
+    }
 }
 ?><!DOCTYPE html>
 <html lang="en">
@@ -41,6 +50,12 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
 </head>
 <body>
     <div class="container">
+        <?php
+            if($loginFailed)
+            {
+                echo "Incorrect username or password!<br><br>";
+            }
+        ?>
         <div class="loginbox">
             <h1> Login</h1>
             <form id="login" action="login.php" method="POST">

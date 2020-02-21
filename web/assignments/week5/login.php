@@ -24,14 +24,16 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     if($result)
     {
         $row = $stmt->fetch();
-        $hashedpassword($row['acct_password']);
+        $hashedPassword = $row['acct_password'];
+        echo $hashedpassword;
+        exit;
         //Checking if they match
-        if(password_verify($password, $hashedpassword))
-        {
-            $_SESSION['acct_name'] = $username;
-            header('Location: book.php');
-            die();
-        }
+        // if(password_verify($password, $hashedpassword))
+        // {
+        //     $_SESSION['acct_name'] = $username;
+        //     header('Location: book.php');
+        //     die();
+        // }
     }
 }
 //         else

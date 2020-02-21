@@ -116,3 +116,4 @@ CREATE TABLE users(
     acct_password VARCHAR(100)
 );
 UPDATE book SET id = 7 WHERE author_name = 'for me';
+DELETE FROM users WHERE id= 2;

@@ -15,11 +15,12 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     require 'connections.php';
     $db = get_db();
 
-    $query = 'SELECT acct_password FROM user WHERE acct_name =:username';
+    $query = 'SELECT acct_password FROM users WHERE acct_name =:username';
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username);
     $result = $stmt->execute();
     echo $result[0];
+
 //     if($result)
 //     {
 //         $row = $stmt->fetch();

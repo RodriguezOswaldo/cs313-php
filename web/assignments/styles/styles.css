@@ -3,10 +3,10 @@ body{
     background: #42777e;
     text-align: center;
 }
-
-.container{
+html{
   background: #4f8d96;
 }
+
 
 .cont-assignments{
   text-align: left;
@@ -154,4 +154,4 @@ button:focus{
     border: 1px solid #fff;
     background:rgb(126, 163, 160);
     color:tomato;
-}
+}               

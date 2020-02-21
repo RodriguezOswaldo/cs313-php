@@ -82,7 +82,7 @@ body{
     background:#166;
     color:#fff;
     box-sizing:border-box;
-    box-shadow: #333 1px 1px 1px;
+    box-shadow: #333 3px 3px 3px;
 }
 .icon{
     width:100px;

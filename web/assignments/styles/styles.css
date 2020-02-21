@@ -3,6 +3,11 @@ body{
     background: #42777e;
     text-align: center;
 }
+
+.container{
+  background: #4f8d96;
+}
+
 .cont-assignments{
   text-align: left;
 }
@@ -98,7 +103,7 @@ h1{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.loginbox input[type="text"], input[type="email"]{
+.loginbox input[type="text"], input[type="password"]{
     margin: 0 auto 20px auto; 
     text-align: center;
     width: 78%;
@@ -109,7 +114,7 @@ h1{
     font-size: 1.2em;
     font-family: 'Courier New', Courier, monospace;
 }
-.loginbox input[type="email"]:focus,
+.loginbox input[type="password"]:focus,
  .loginbox input[type="text"]:focus {
     width: 95%;
     border-color: #2ecc71;

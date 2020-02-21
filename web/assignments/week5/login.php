@@ -29,27 +29,25 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         // exit;
         //Checking if the password match
 
-        header("Location: book.php");
-        die();
-        // if(password_verify($password, $hashedpassword))
-        // {
+        if(password_verify($password, $hashedpassword))
+        {
+            header("Location: book.php");
+            die();
         //     $_SESSION['acct_name'] = $username;
         //     echo 'you are here';
         //     // header("Location: book.php");
         //     die();
-        // }
+        }
+        else
+        {
+            $loginFailed = true;
+        }
+    }    
+    else
+    {
+        $loginFailed = true;
     }
 }
-//         else
-//         {
-//             $loginFailed = true;
-//         }
-//     }    
-//     else
-//     {
-//         $loginFailed = true;
-//     }
-// }
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +79,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
                 <input type="submit" value="Login" class="btn btn-outline-success">
             </form>
             <br>
-            <p>New? then <a href="register.php">Register</a> for a new Account.</p>
+            <p>New on Bookshelf? then <a href="register.php">Register</a> for a new Account.</p>
         </div>
     </div>
     

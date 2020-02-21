@@ -19,7 +19,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     $stmt = $db->prepare($query);
     $stmt->bindValue(':username', $username);
     $result = $stmt->execute();
-    echo $result[0];
+    echo "sucess";
 
 }
 

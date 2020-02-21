@@ -25,7 +25,7 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
     {
         $row = $stmt->fetch();
         $hashedPassword = $row['acct_password'];
-        echo $hashedpassword;
+        echo $hashedPassword;
         exit;
         //Checking if they match
         // if(password_verify($password, $hashedpassword))

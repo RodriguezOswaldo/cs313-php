@@ -17,7 +17,7 @@ $password = $_POST['acct_password'];
  require("connections.php");
  $db = get_db();
 
- $query = 'INSERT INTO user(acct_name, acct_password) VALUES (:username, :password)';
+ $query = 'INSERT INTO users(acct_name, acct_password) VALUES (:username, :password)';
  $stmt = $db->prepare($query);
  $stmt->bindValue(':username',$username);
  $stmt->bindValue(':password',$hashedPassword);

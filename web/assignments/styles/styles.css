@@ -152,6 +152,6 @@ button{
 }
 button:focus{
     border: 1px solid #fff;
-    background:turquoise;
+    background:rgb(126, 163, 160);
     color:tomato;
 }

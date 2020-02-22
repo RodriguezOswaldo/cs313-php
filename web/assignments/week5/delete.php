@@ -19,6 +19,4 @@ $new_page = "book.php";
 
 header("location: $new_page");
 die();
-
-
 ?>

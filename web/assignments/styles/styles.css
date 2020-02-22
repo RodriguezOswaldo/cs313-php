@@ -73,7 +73,9 @@ body{
       transform: scale(1.0); 
     } 
   }
-  
+  li{
+      list-style: none;
+  }
   .loginbox{
     margin-top:60px;
     margin-right: auto;

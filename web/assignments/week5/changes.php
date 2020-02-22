@@ -22,7 +22,7 @@ $stmt->bindValue(':book_category_name', $book_category_name, PDO::PARAM_STR);
 $stmt->bindValue(':client_name', $client_name, PDO::PARAM_STR);
 
 //I commented out the execute because it was breaking the project.
-// $stmt->execute();
+$stmt->execute();
 echo 'executed!';
 // $stmt2 = $db->prepare('UPDATE client SET book_title = :book_title, client_name = :client_name WHERE  b.id =:id;');
 // $stmt2->bindValue(':client_name', $client_name, PDO::PARAM_STR);

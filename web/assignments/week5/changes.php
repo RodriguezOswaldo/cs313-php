@@ -12,8 +12,8 @@ $id = htmlspecialchars($_POST['book_id']);
 require 'connections.php';
 $db = get_db();
 
-
-$stmt = $db->prepare('UPDATE book SET book_title = :book_title, author = :author, book_release_year = :book_release_year,book_category_name = :book_category_name, client_name = :client_name  =  WHERE book_id =:book_id;');
+$query = 'UPDATE book SET book_title = :book_title, author = :author, book_release_year = :book_release_year,book_category_name = :book_category_name, client_name = :client_name  =  WHERE book_id =:book_id';
+$stmt = $db->prepare($query);
 $stmt->bindValue(':book_id', $id, PDO::PARAM_INT);
 $stmt->bindValue(':book_title', $book_title, PDO::PARAM_STR);
 $stmt->bindValue(':author', $author, PDO::PARAM_STR);

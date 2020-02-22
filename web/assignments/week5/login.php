@@ -29,11 +29,11 @@ if(isset($_POST['acct_name']) && isset($_POST['acct_password'])){
         // exit;
         //Checking if the password match
 
-        if(password_verify($password, $hashedpassword))
+        if(password_verify($password, $hashedPassword))
         {
+            $_SESSION['acct_name'] = $username;
             header("Location: book.php");
             die();
-        //     $_SESSION['acct_name'] = $username;
         //     echo 'you are here';
         //     // header("Location: book.php");
         //     die();

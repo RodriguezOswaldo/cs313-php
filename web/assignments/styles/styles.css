@@ -88,6 +88,9 @@ body{
     box-sizing:border-box;
     box-shadow: #333 3px 3px 3px;
 }
+.update{
+    height:520px;
+}
 .icon{
     width:100px;
     height: 100px;

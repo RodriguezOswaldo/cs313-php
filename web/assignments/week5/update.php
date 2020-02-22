@@ -32,7 +32,7 @@ $title = $book_rows[0]['book_title'];
 </head>
 <body>
     <div class="container">
-        <div class="loginbox">
+        <div class="loginbox update">
             <h1>Update Book</h1>
             <h2><?php echo $title; ?></h2>
             <p>

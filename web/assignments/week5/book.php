@@ -43,7 +43,7 @@ $db=get_db();
         $category = $row['book_category_name'];
         $client = $row['client_name'];
         // echo "<a href="">$client</a>;
-        echo "<li><a href='booksinfo.php?book_id=$id'>$title</a> <a href='update.php?book_id=$id' class='btn btn-success'>Update</a> | <a href='delete.php' class=' btn btn-outline-danger'>Delete</a></li>";
+        echo "<li><a href='booksinfo.php?book_id=$id'>$title</a> <a href='update.php?book_id=$id' class='btn btn-outline-success'>Update</a> | <a href='delete.php' class=' btn btn-outline-danger'>Delete</a></li>";
     }    
     ?>
     </ul>

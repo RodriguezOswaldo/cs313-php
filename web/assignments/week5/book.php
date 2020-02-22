@@ -23,7 +23,7 @@ $db=get_db();
     <title>Books List!</title>
 </head>
 <body>
-    <div class="container books_summary">
+    <div class="container books-summary">
     <h2>Full List of Books!</h2>
     <ul>
     <?php

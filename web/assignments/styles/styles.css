@@ -10,11 +10,11 @@ body{
 .container{
   background: #966f4f;
 }
+.cont-assignments{
+    text-align: left;
+}
 .books_summary{
     background:#4f965a;
-}
-.cont-assignments{
-  text-align: left;
 }
 .sk-chase {
     width: 40px;

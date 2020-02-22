@@ -15,6 +15,8 @@ $stmt->bindValue(':id', $book_id, PDO::PARAM_INT);
 $stmt->execute();
 $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $title = $book_rows[0]['book_title'];
+
+
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

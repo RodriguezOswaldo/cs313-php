@@ -48,7 +48,7 @@ $db=get_db();
     ?>
     </ul>
 
-    <p>Do you want to contribute to the bookshelf? then<a href="newbook.php">Add a Book</a> yourself</p> 
+    <p>Do you want to contribute to the bookshelf? then <a href="newbook.php">Add a Book</a> yourself</p> 
     </div>
 </body>
 </html>

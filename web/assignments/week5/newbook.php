@@ -43,6 +43,8 @@ $book_rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <button class="btn-info" type="submit" >Submit</button>
             </form>
         </div>
+
+        <a href="book.php">Back to the list</a>
     </div>
 </body>
 </html>

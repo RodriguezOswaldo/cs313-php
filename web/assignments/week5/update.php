@@ -63,7 +63,8 @@ $title = $book_rows[0]['book_title'];
                 <input name="client_name" id="client_name" value="<?php if (isset($client)) { echo $client; } ?>" required><br><br>
                 <button class="btn-info" type="submit" >Submit</button>
             </form>
-        </div>
+        </div><br><br>
+        <a href="book.php">Back to the list</a>
     </div>
 </body>
 </html>

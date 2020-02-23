@@ -47,6 +47,7 @@ $title = $book_rows[0]['book_title'];
 
     ?>
     </p>
+    <a href="book.php">Back to the list</a>
     </div>
 </body>
 </html>

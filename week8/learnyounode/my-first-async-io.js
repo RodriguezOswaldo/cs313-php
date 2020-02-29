@@ -1,5 +1,3 @@
-
-
 const fs = require('fs');
 var data = fs.readFileSync(process.argv[2], {encoding:'utf-8'}, function callback(err, res){
     if(err){

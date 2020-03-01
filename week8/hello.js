@@ -17,6 +17,7 @@ function callBack(req, res){
         // var myReadStream = fs.createReadStream(__dirname + '/data.txt', 'utf-8');
         // myReadStream.pipe(res);
     }
+    //Going Above and Beyond!
     if(req.url=='/family'){
         res.writeHead(200, {'Content-Type':'text/html'});
         res.write('<h2>My Family:</h2>');
@@ -27,7 +28,7 @@ function callBack(req, res){
     }
     else{
         res.writeHead(404, {'Content-Type':'text/plain'});
-        res.end('Error!');
+        res.end('Page Not Found');
     }
 }
 var newServer = http.createServer(callBack);

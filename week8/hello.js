@@ -7,6 +7,7 @@ function callBack(req, res){
     if(req.url== '/home'){
         res.writeHead(200, {'Content-Type':'text/html'});
         res.write('<h1>Welcome to the Home Page</h1>');
+        res.write('<p>This application was created using node.js</p>');
         res.end();
     }
     if(req.url=='/getData'){

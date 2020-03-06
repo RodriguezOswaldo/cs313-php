@@ -39,6 +39,9 @@
         <li>
             <a target="_blank" title="form handling PHP" href="week5/login.php">Login</a>
         </li>
+        <li>
+            <a target="_blank" title="form handling PHP" href="week9/practice/views/result.ejs">Login</a>
+        </li>
         </ul>
         <h2>This page is still considered work in Progress</h2>
         <div class="sk-chase">
